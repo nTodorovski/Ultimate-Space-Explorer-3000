@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Onomber';
+    src: url("./fonts/Onomber.otf") format("opentype");
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Onomber';
+    background-image: url('../img/background.jpg');
+}
+.card{
+    margin: 10px;
+    background-image: url('../img/card.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-img-top{
+    margin-top: 5px;
+}
+#gameover{
+    text-align: center; 
+    vertical-align: middle;
+}
