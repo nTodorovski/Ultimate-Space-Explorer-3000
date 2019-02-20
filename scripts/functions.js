@@ -24,7 +24,7 @@ function createPlanet(planet, ship) {
     let planets = $("#planets1");
     planets.append(`
     <div class="col">
-        <div class="card" style="width: 18rem;">
+        <div class="card" id="${planet.name}"style="width: 18rem;">
             <img src="${planet.img}" class="card-img-top" alt="${planet.name}">
             <div class="card-header">
                 <h2>${planet.name}</h2>
@@ -125,4 +125,8 @@ function checkShip(ship) {
         console.log("GAME OVER!!! You lost your crew during the flight.");
         return true;
     }
+}
+
+function removeCSS() {
+
 }

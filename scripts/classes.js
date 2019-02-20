@@ -4,6 +4,8 @@ let price = {
     crew: 80
 }
 
+let dockOnPlanet;
+
 class Ship {
     constructor(name, crew, fuel, hull, speed, img) {
         this.name = name;
@@ -22,6 +24,9 @@ class Ship {
     }
 
     async start(planet) {
+        if(dockOnPlanet!== undefined){
+            dockOnPlanet.css('border','');
+        }
         if (this.dockedPlanet === planet) {
             console.log("You are already on this planet.");
             return;
@@ -92,6 +97,8 @@ class Ship {
             console.log(`${this.name} docked on ${planet.name}.`);
             this.stats();
             enableBUttons();
+            dockOnPlanet = $(`#${planet.name}`);
+            dockOnPlanet.css("border","5px solid red");
         }, 2000);
     }
 }
