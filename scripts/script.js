@@ -1,6 +1,6 @@
-let starFighter = new Ship("Starfighter", 3, 380, 500, 0.5, "./img/starFighter.png");
-let crushinator = new Ship("Crushinator", 5, 540, 400, 0.2, "./img/crushinator.png");
-let scouter = new Ship("Scouter", 1, 300, 300, 0.9, "./img/scouter.png");
+let starFighter = new Ship("Starfighter", 3, 380, 500, 0.5, "img/starfighter.png");
+let crushinator = new Ship("Crushinator", 5, 540, 400, 0.2, "img/crushinator.png");
+let scouter = new Ship("Scouter", 1, 300, 300, 0.9, "img/scouter.png");
 
 let rubicon9 = new Planet("Rubicon9", 300000, 2000000, 4, 2, "img/Rubicon9.png");
 let r7 = new Planet("R7", 120000, 4000000, 7, 3, "img/R7.png");
