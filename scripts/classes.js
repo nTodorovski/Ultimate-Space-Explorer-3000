@@ -101,7 +101,7 @@ class Ship {
             dockOnPlanet = $(`#${planet.name}`);
             dockOnPlanet.css("border","5px solid red");
             planetArr.push(planet);
-            if(checkIfWon()){
+            if(checkIfWon(planetArr)){
                 return;
             }
         }, 2000);
