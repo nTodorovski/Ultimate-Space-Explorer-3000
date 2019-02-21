@@ -101,6 +101,7 @@ class Ship {
             dockOnPlanet = $(`#${planet.name}`);
             dockOnPlanet.css("border","5px solid red");
             planetArr.push(planet);
+            console.log(planetArr);
             if(checkIfWon(planetArr)){
                 return;
             }

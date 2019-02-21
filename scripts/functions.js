@@ -128,6 +128,7 @@ function checkShip(ship) {
 }
 
 function checkIfWon(arr) {
+    console.log(arr);
     if (arr.length > 4) {
         if (arr.includes(rubicon9) && arr.includes(r7) && arr.includes(magmus) && arr.includes(dextriaey) && arr.includes(b18)) {
             $("#planets").remove();
