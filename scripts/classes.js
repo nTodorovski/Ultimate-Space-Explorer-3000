@@ -135,9 +135,15 @@ class Planet {
             return;
         }
 
-        let hullPrice = this.getMarketPrice(price.repair);
         if (ship.hull === ship.maxHull) {
             console.log("Hull is already at max strength. You can't repair it.");
+            return;
+        } 
+
+        let hullPrice = this.getMarketPrice(price.repair);
+
+        if (ship.credits < hullPrice) {
+            console.log("You don't have enough credits.");
             return;
         } else {
             ship.hull = ship.maxHull;
