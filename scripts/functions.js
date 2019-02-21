@@ -128,12 +128,11 @@ function checkShip(ship) {
 }
 
 function checkIfWon(arr) {
-    console.log(arr);
     if (arr.length > 4) {
         if (arr.includes(rubicon9) && arr.includes(r7) && arr.includes(magmus) && arr.includes(dextriaey) && arr.includes(b18)) {
             $("#planets").remove();
             $("body").append(`<div class="row">
-                <div id="gamewon" class="col"><img id="continue" src="./img/gamewon.gif" class="img-fluid" alt="gamewon"></div>
+                <div id="gamewon" class="col"><img id="continue" src="./img/gamewin.gif" class="img-fluid" alt="gamewon"></div>
             </div>`);
             $("#continue").click(() => {
                 location.reload();
