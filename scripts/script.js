@@ -37,4 +37,3 @@ $("#Scouter").click(function () {
     let ship = scouter;
     showPlanets(ship);
 });
-

@@ -5,6 +5,7 @@ let price = {
 }
 
 let dockOnPlanet;
+let planetArr = [];
 
 class Ship {
     constructor(name, crew, fuel, hull, speed, img) {
@@ -99,6 +100,10 @@ class Ship {
             enableBUttons();
             dockOnPlanet = $(`#${planet.name}`);
             dockOnPlanet.css("border","5px solid red");
+            planetArr.push(planet);
+            if(checkIfWon()){
+                return;
+            }
         }, 2000);
     }
 }
